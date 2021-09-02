@@ -13,7 +13,7 @@ public class GenericApp {
 
         // Проверка второго метода
         String[] arrayStr = {"Один", "Два", "Три", "Четыре", "Пять"};
-        List arraylist = arrayToArrayList(arrayStr);
+        List<String> arraylist = arrayToArrayList(arrayStr);
         System.out.println(arraylist);
     }
 
@@ -29,6 +29,7 @@ public class GenericApp {
     }
 
     public static <T> List<T> arrayToArrayList(T[] array) {
+
         return Arrays.asList(array);
     }
 }
